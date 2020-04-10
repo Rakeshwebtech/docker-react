@@ -12,10 +12,10 @@ script:
 deploy:
   edge: true
   provider: elasticbeanstalk
-  region: "us-east-2"
+  region: "US East (Ohio) us-east-2"
   app: "docker-react"
   env: "DockerReact-env-1"
-  bucket_name: "pandyala"
+  bucket_name: "elasticbeanstalk-us-east-2-675770412962"
   bucket_path: "docker-react"
   on:
     branch: master
