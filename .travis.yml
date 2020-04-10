@@ -11,6 +11,7 @@ script:
 
 deploy:
   edge: true
+  http_wire_trace: "true"
   provider: "elasticbeanstalk"
   region: "ap-south-1"
   app: "docker-react"
