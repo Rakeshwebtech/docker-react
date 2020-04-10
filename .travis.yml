@@ -11,7 +11,6 @@ script:
 
 deploy:
   edge: true
-  http_wire_trace: "true"
   provider: "elasticbeanstalk"
   region: "ap-south-1"
   app: "docker-react"
@@ -20,6 +19,6 @@ deploy:
   bucket_path: "docker-react"
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
+  access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
 
